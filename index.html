@@ -20,6 +20,12 @@
           <a class="nav-link" href="#">Help the shelter</a>
           <a class="nav-link" href="#">Contacts</a>
         </nav>
+        <!--Burger-->
+        <div class="burger">
+          <span>
+          </span>
+        </div>
+        <!--Burger-->
       </div>
     </div>
   </header>
@@ -199,4 +205,10 @@
       </div>
     </div>
   </footer>
+  <script>
+    document.querySelector('.burger').addEventListener('click', function(){
+      this.classList.toggle('active');
+      document.querySelector('nav').classList.toggle('open');
+    })
+  </script>
 </body>
